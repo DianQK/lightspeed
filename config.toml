@@ -17,6 +17,7 @@ ogimage = "lightning.png"
 zola = true
 netlify = true
 maintained_with_love = true
+mastodon = "https://mastodon.online/@dianqk"
 
 footer_links = [
     {url = "$BASE_URL/about", name = "About"},

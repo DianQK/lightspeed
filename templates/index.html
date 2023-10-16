@@ -11,6 +11,7 @@
     <meta name="description" content="{% block description %}{{ trans(key="description", lang=lang) }}{% endblock description %}" />
     <link rel="shortcut icon"  href="{{ get_url(path="favicon.ico") | safe }}" />
     <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", lang=lang) | safe }}">
+    {%- if config.extra.mastodon -%}<link rel="me" href="{{ config.extra.mastodon }}" />{%- endif -%}
 
     {% set data = load_data(path="public/style.css", format="plain") -%}
     <style>{{ data | safe }}</style>
